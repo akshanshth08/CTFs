@@ -102,5 +102,3 @@ But I was not able to read the file so I wrote another service to copy that file
 and then I was able to read the flag
 
 ![image](https://user-images.githubusercontent.com/45536407/85084944-39299200-b1a4-11ea-95fe-cacab75117db.png)
-
-
