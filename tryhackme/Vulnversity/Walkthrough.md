@@ -1,45 +1,46 @@
-#Vulnversity Walkthrough
+## Vulnversity Walkthrough
 This is one of the 6 getting started rooms when you join tryhackme.
 
-Task 1 was to deploy the machine.
+**Task 1** was to deploy the machine.
 
-Task 2 reconnaissance.
+**Task 2 reconnaissance.**
+
 Inro briefs you about the Nmap and various of the flags which can be used
 
-2.1   This was a simple nmap scan
+    * 2.1   This was a simple nmap scan
 ![image](https://user-images.githubusercontent.com/45536407/85080658-cfa38680-b197-11ea-9643-c18b070d9dc8.png)
 
-2.2   From the nmap scan what were the number of ports which were opened : 6
+    * 2.2   From the nmap scan what were the number of ports which were opened : 6
 
-2.3   From the output of nmap we can view the squid proxy server : 3.5.12
+    * 2.3   From the output of nmap we can view the squid proxy server : 3.5.12
 
-2.4   ans :400
+    * 2.4   ans :400
 
-2.5   "-n" in Nmap will not resolve DNS
+    * 2.5   "-n" in Nmap will not resolve DNS
 
-2.6   Nmap output tells us the OS as ubuntu
+    * 2.6   Nmap output tells us the OS as ubuntu
 
-2.7   web server is running on port 3333
+    * 2.7   web server is running on port 3333
 
-2.8   done
+    * 2.8   done
 
 
-Task 3 Locating Directories using Gobuster
+**Task 3 Locating Directories using Gobuster**
 
-3.1 read the into about gobuster
+    * 3.1 read the into about gobuster
 
-3.2 run the gobuster on the deployed machine to find the hidden directory : /internal/
+    * 3.2 run the gobuster on the deployed machine to find the hidden directory : /internal/
 
 ![image](https://user-images.githubusercontent.com/45536407/85081312-9f5ce780-b199-11ea-90ef-af9350c4ee57.png)
 
 
-Task 4 Compromise the webserver
+**Task 4 Compromise the webserver**
 
-4.1 Navigated to /internal url which was an upload page. tried a few uploads but all the uploads failed. ans .php
+    * 4.1 Navigated to /internal url which was an upload page. tried a few uploads but all the uploads failed. ans .php
 
 ![image](https://user-images.githubusercontent.com/45536407/85081411-e77c0a00-b199-11ea-9be3-6a9a4adaaa69.png)
 
-4.2 I configured my burp proxy and intercepted the input to chek the allowed extensions.
+    * 4.2 I configured my burp proxy and intercepted the input to chek the allowed extensions.
 
 
 ![image](https://user-images.githubusercontent.com/45536407/85082096-dd5b0b00-b19b-11ea-81d3-27fc6c9566bc.png)
@@ -62,23 +63,23 @@ from the length of the response we can infer that .phtml was successfull
 ![image](https://user-images.githubusercontent.com/45536407/85082725-c87f7700-b19d-11ea-82f6-c85b7702d71f.png)
 
 
-4.3 .phtml is the allowed extionsion
+    * 4.3 .phtml is the allowed extionsion
 
-4.4 I downloaded the php shell as mentioned in introduction to task and uploaded it and accessed the shell prompt
+    * 4.4 I downloaded the php shell as mentioned in introduction to task and uploaded it and accessed the shell prompt
 
 ![image](https://user-images.githubusercontent.com/45536407/85083182-fe712b00-b19e-11ea-8edd-d17ca0085882.png)
 
-4.5 in /home directory I found bill folder so this must be the user who manages the serve
+    * 4.5 in /home directory I found bill folder so this must be the user who manages the serve
 
-4.6 in bill's home directory I found user.txt which contained the flag
+    * 4.6 in bill's home directory I found user.txt which contained the flag
 
 ![image](https://user-images.githubusercontent.com/45536407/85083292-514ae280-b19f-11ea-9b08-bf40d88a8e09.png)
 
 
-Task 5 : Privelege Escalation
+**Task 5 : Privelege Escalation**
 
-5.1  for finding suid binaries I used :
-    find / -perm -u=s -type f 2>/dev/null
+    * 5.1  for finding suid binaries I used :
+        ** find / -perm -u=s -type f 2>/dev/null **
     
 ![image](https://user-images.githubusercontent.com/45536407/85083614-3e84dd80-b1a0-11ea-90c8-bc4c282eda15.png)
 
