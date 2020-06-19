@@ -69,7 +69,7 @@ from the length of the response we can infer that .phtml was successfull
 
 ![image](https://user-images.githubusercontent.com/45536407/85083182-fe712b00-b19e-11ea-8edd-d17ca0085882.png)
 
-    * 4.5 in /home directory I found bill folder so this must be the user who manages the serve
+    - 4.5 in /home directory I found bill folder so this must be the user who manages the serve
 
     * 4.6 in bill's home directory I found user.txt which contained the flag
 
@@ -79,7 +79,7 @@ from the length of the response we can infer that .phtml was successfull
 **Task 5 : Privelege Escalation**
 
     * 5.1  for finding suid binaries I used :
-        ** find / -perm -u=s -type f 2>/dev/null **
+   **find / -perm -u=s -type f 2>/dev/null**
     
 ![image](https://user-images.githubusercontent.com/45536407/85083614-3e84dd80-b1a0-11ea-90c8-bc4c282eda15.png)
 
