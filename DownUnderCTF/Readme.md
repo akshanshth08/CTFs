@@ -13,7 +13,7 @@ Contains the writepus of the challanges I was able to solve.
 * [Misc](#Misc)
   * [16 Home Runs](#16-Home-Runs)
 * Crypto
-  * rot-i
+  * [rot-i](https://github.com/akshanshth08/CTFs/blob/master/DownUnderCTF/Crypto/rot-i.md)
 * Reversing
   * formatting
 * Pwn
