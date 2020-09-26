@@ -17,7 +17,7 @@ Contains the writepus of the challanges I was able to solve.
 * Reversing
   * formatting
 * Pwn
-  * shell this!
+  * [shell this!](https://github.com/akshanshth08/CTFs/blob/master/DownUnderCTF/Pwn/Shell%20This!/Writeup.md)
   
   
 ### forensics
