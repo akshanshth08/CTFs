@@ -23,4 +23,29 @@ from the netcat tcp stream we have the commands which attacker ran on the system
 ![image](https://user-images.githubusercontent.com/45536407/120570725-ba465d00-c3e6-11eb-9c21-2001f7244cd1.png)
 
 
-**Task 2  Research - Analyse the codeP**
+**Task 2  Research - Analyse the code**
+For this part you have to open the github and study the code of the backdoor
+
+Default Hash:
+![image](https://user-images.githubusercontent.com/45536407/120729901-4cfdff00-c4ae-11eb-8342-371f941b8982.png)
+
+Hardcoded Salt:
+![image](https://user-images.githubusercontent.com/45536407/120729977-71f27200-c4ae-11eb-9c53-ae9ecdb8a37d.png)
+
+Hash that Attacker used :
+![image](https://user-images.githubusercontent.com/45536407/120730110-b847d100-c4ae-11eb-905e-937bd8c5ce6c.png)
+
+Cracking the hash :
+concatenated the hash and the salt in a file:
+![image](https://user-images.githubusercontent.com/45536407/120730446-7ec39580-c4af-11eb-9ae0-3dc249d62231.png)
+
+ran hashcat
+![image](https://user-images.githubusercontent.com/45536407/120730488-97cc4680-c4af-11eb-8671-f02b3aa6bffe.png)
+
+![image](https://user-images.githubusercontent.com/45536407/120730558-bb8f8c80-c4af-11eb-99c9-75e6aecbb3bb.png)
+
+![image](https://user-images.githubusercontent.com/45536407/120730653-f2fe3900-c4af-11eb-99f6-d1615c0629a5.png)
+
+
+
+
