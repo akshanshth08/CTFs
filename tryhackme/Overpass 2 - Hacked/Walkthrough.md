@@ -1,7 +1,9 @@
-**Overpass 2 - Hacked**
+***Overpass 2 - Hacked***
+
 This is a free room if you want to practice forensics, where you have to analyze a pcap file and answer questions which follow.
 
 **Task 1  Forensics - Analyse the PCAP**
+
 Download the PCAP file, open it in wireshark analyze the traffic to answer the questions:
 
 1.1 URL of the page :
@@ -45,6 +47,30 @@ ran hashcat
 ![image](https://user-images.githubusercontent.com/45536407/120730558-bb8f8c80-c4af-11eb-99c9-75e6aecbb3bb.png)
 
 ![image](https://user-images.githubusercontent.com/45536407/120730653-f2fe3900-c4af-11eb-99f6-d1615c0629a5.png)
+
+
+**Task 3  Get Back in**
+Message left:
+This message could be found in the wireshark packets in index.html
+
+![image](https://user-images.githubusercontent.com/45536407/121090106-0feb8280-c7b6-11eb-97f1-79bb5aa68060.png)
+
+User flag :
+from nmap you can see there are 2 services running on the server, both ssh.
+I tried connecting using different users on both the ports using the passwords cracked from the shadow file in the earlier steps none of them worked but, I was able to login with user james with the hash that was cracked in the earlier steps as the password for backdoor.
+
+![image](https://user-images.githubusercontent.com/45536407/121090656-e848ea00-c7b6-11eb-875e-b36e371b670e.png)
+
+
+read the user.txt flag
+![image](https://user-images.githubusercontent.com/45536407/121090916-44ac0980-c7b7-11eb-987d-23b1ebfdd31c.png)
+
+for root.txt flag I had to search a bit. Then I found a suid binary for bash in the user directory.
+
+![image](https://user-images.githubusercontent.com/45536407/121091096-77ee9880-c7b7-11eb-8ce2-6dde2f1577e2.png)
+
+ran bash with -p attrbute for running it in priviledged mode.(I didn't knew about -p then :P)
+![image](https://user-images.githubusercontent.com/45536407/121091402-f3504a00-c7b7-11eb-9d53-c32b517a9901.png)
 
 
 
