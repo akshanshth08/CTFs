@@ -43,6 +43,39 @@ In the end I succeeded in uploading the file with .phtml extention from which I 
 ![image](https://user-images.githubusercontent.com/45536407/122849063-cbdd9f00-d2d8-11eb-8c19-381f0c557d8a.png)
 
 
+and got the user flag:
+
+![image](https://user-images.githubusercontent.com/45536407/122849168-fe879780-d2d8-11eb-9b27-9a9569a4e8e5.png)
+
+
+** Task 4  Privilege escalation **
+
+For the root flag I searched for suid binaries.
+
+![image](https://user-images.githubusercontent.com/45536407/122849233-1d862980-d2d9-11eb-9df1-cdc3b43a33d6.png)
+
+
+python binary had the suid bit set
+![image](https://user-images.githubusercontent.com/45536407/122849288-38f13480-d2d9-11eb-9cb9-3b46b07c589e.png)
+
+searched how to exploit this, thanks to gtfobins : https://gtfobins.github.io/gtfobins/python/#suid 
+
+![image](https://user-images.githubusercontent.com/45536407/122849863-507ced00-d2da-11eb-9938-1bb14e937d9f.png)
+
+
+Since I was in a weevely shell I was not able to get the priviledged shell by executing python command to spawn a shell.
+
+
+Inside the weevely shell I created a reverse tcp shell and then spawned the priviledged shell.
+
+![image](https://user-images.githubusercontent.com/45536407/122849562-bd43b780-d2d9-11eb-9314-d037c5b69f0a.png)
+
+read the root.txt file to get the flag
+
+![image](https://user-images.githubusercontent.com/45536407/122849806-3511e200-d2da-11eb-8e08-d6433a18f3d7.png)
+
+
+
 
 
 
