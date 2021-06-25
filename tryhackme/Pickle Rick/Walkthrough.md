@@ -45,6 +45,41 @@ first command I executed was "ls"
 
 ![image](https://user-images.githubusercontent.com/45536407/123011654-d490ac80-d38e-11eb-8513-377c388efd27.png)
 
-aas you can see we the first super secret ingredient is in the same directory. You can 
+as you can see we the first super secret ingredient is in the same directory. You can read the fiie by navigating to <machine_ip>/Sup3rS3cretPickl3Ingred.txt
+but since we had the ability to execute command to I wanted to read it using it. I tried cat but it was not allowed, then I tried more but that was also not allowed.
+
+I was able to read the flag using less
+
+![image](https://user-images.githubusercontent.com/45536407/123346628-bbbaff00-d526-11eb-88cd-e105342b4233.png)
+
+
+Looking into clue.txt we got the hint lo looh around the file system.
+
+![image](https://user-images.githubusercontent.com/45536407/123347022-e60cbc80-d526-11eb-831a-d9a444738005.png)
+
+I checked for the users present and the second ingrediant was in the home directory of rick
+
+![image](https://user-images.githubusercontent.com/45536407/123347751-15bbc480-d527-11eb-8499-4e6dcd6d44df.png)
+
+![image](https://user-images.githubusercontent.com/45536407/123347987-279d6780-d527-11eb-945b-f437a979aadc.png)
+
+![image](https://user-images.githubusercontent.com/45536407/123348351-43087280-d527-11eb-9808-396288c74efc.png)
+
+since this was our user.txt I thought last flag will be root.txt so I started ways to escalate priviledges.
+Before trying anything else I checked sudo priviledges of our user.
+
+![image](https://user-images.githubusercontent.com/45536407/123349949-fb361b00-d527-11eb-83b2-379164252699.png)
+
+
+It means we can run all the commands without the need of password.
+
+so I checked for the flag in the root directory and found our flag there
+
+![image](https://user-images.githubusercontent.com/45536407/123350017-24ef4200-d528-11eb-897c-7d7432c33b12.png)
+
+![image](https://user-images.githubusercontent.com/45536407/123350079-42241080-d528-11eb-84e8-d5e5e542c5db.png)
+
+
+
 
 
