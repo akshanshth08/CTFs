@@ -10,7 +10,7 @@ ran masscan to check the open ports on the server.
 
 Only 2 ports running 1 for ssh and other for web server.
 
-I checked the webiste.
+I checked the website.
 
 ![image](https://user-images.githubusercontent.com/45536407/123497082-87644300-d5f9-11eb-9224-87044544bc4a.png)
 
@@ -38,5 +38,9 @@ For escalating priviledges checked the sudo priviledges for the user and it coul
 Checked GTFOBins (https://gtfobins.github.io/gtfobins/socat/#sudo) to see if I can exploit this binary, which I can
 
 ![image](https://user-images.githubusercontent.com/45536407/123497333-f4c4a380-d5fa-11eb-9bd3-717e1dda7b0f.png)
+
+
+using this esclated to root and read the flag
+![image](https://user-images.githubusercontent.com/45536407/123497376-2f2e4080-d5fb-11eb-9024-538d36cd57d3.png)
 
 
