@@ -1,7 +1,7 @@
 # CTFs
 Writeups for CTFs
 
-Tryhackme (https://tryhackme.com/dashboard)
+Tryhackme (https://tryhackme.com/)
 
 Crackmes.one (https://crackmes.one/) : Reverse Enigeneer challanges on different crackme files
 
