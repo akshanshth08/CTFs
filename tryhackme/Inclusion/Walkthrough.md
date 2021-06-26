@@ -41,6 +41,7 @@ Checked GTFOBins (https://gtfobins.github.io/gtfobins/socat/#sudo) to see if I c
 
 
 using this esclated to root and read the flag
+
 ![image](https://user-images.githubusercontent.com/45536407/123497376-2f2e4080-d5fb-11eb-9024-538d36cd57d3.png)
 
 
