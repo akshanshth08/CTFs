@@ -4,6 +4,7 @@
 * Bounty Hacker
 * Ice
 * Inclusion
+* LazyAdmin
 * Overpass 2 - Hacked
 * Pickle Rick
 * The Code Caper
