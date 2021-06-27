@@ -74,7 +74,7 @@ going back to the existing exploits we found from the searchsploit results. The 
 
 ![image](https://user-images.githubusercontent.com/45536407/123558409-14c3a680-d764-11eb-8a19-ab0f6aae19e2.png)
 
-It says we can upload PHP code in the ads and then access it, So I created a PHP reverse shell from pentest monkey and uploaded the file
+It says we can upload PHP code in the ads and then access it, So I created a PHP reverse shell from pentestmonkey (https://github.com/pentestmonkey/php-reverse-shell/blob/master/php-reverse-shell.php) and uploaded the file
 
 ![image](https://user-images.githubusercontent.com/45536407/123558448-450b4500-d764-11eb-88a8-1c6d22f59be3.png)
 
