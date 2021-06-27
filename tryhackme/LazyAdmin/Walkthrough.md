@@ -103,7 +103,7 @@ copy.sh was just executing some commands and these commands will run with root p
 
 ![image](https://user-images.githubusercontent.com/45536407/123558638-5e60c100-d765-11eb-810b-995f51d3b080.png)
 
-Since these command were running as root. I overwrote the file with /bin/sh to get me a root shell
+Since these command were running as root. I overwrote the file with /bin/sh to get me a root shell and read the root.txt flag
 
 ![image](https://user-images.githubusercontent.com/45536407/123558715-be576780-d765-11eb-8e34-e41762651358.png)
 
